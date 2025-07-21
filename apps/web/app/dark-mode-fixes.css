@@ -1,0 +1,159 @@
+/* Dark Mode Enhancements - HILMI Website */
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode base styles */
+.dark {
+  color-scheme: dark;
+}
+
+/* Enhanced dark mode backgrounds */
+.dark body {
+  background: linear-gradient(135deg, hsl(222.2 84% 4.9%) 0%, hsl(217.2 32.6% 17.5%) 100%);
+}
+
+/* Improved glassmorphism effects for dark mode */
+.dark .glass-effect {
+  background: rgba(30, 41, 59, 0.7);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+/* Enhanced card backgrounds */
+.dark .bg-card {
+  background: linear-gradient(145deg, hsl(217.2 32.6% 17.5%) 0%, hsl(222.2 84% 4.9%) 100%);
+  border: 1px solid hsl(217.2 32.6% 17.5%);
+}
+
+/* Better text contrast */
+.dark .text-muted-foreground {
+  color: hsl(215 20.2% 65.1%);
+}
+
+/* Enhanced primary colors for dark mode */
+.dark .text-primary {
+  color: hsl(142.1 70.6% 45.3%);
+}
+
+.dark .bg-primary {
+  background: linear-gradient(135deg, hsl(142.1 70.6% 45.3%) 0%, hsl(142.1 76.2% 36.3%) 100%);
+}
+
+/* Improved hover states */
+.dark .hover\:bg-accent:hover {
+  background-color: hsl(217.2 32.6% 17.5%);
+}
+
+/* Better focus states */
+.dark .focus-visible\:ring-2:focus-visible {
+  ring-color: hsl(142.1 70.6% 45.3%);
+}
+
+/* Enhanced navbar for dark mode */
+.dark nav {
+  background: rgba(15, 23, 42, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+/* Improved button styles */
+.dark .btn-primary {
+  background: linear-gradient(135deg, hsl(142.1 70.6% 45.3%) 0%, hsl(142.1 76.2% 36.3%) 100%);
+  box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.2);
+}
+
+.dark .btn-primary:hover {
+  background: linear-gradient(135deg, hsl(142.1 76.2% 36.3%) 0%, hsl(142.1 70.6% 45.3%) 100%);
+  box-shadow: 0 6px 20px 0 rgba(16, 185, 129, 0.3);
+}
+
+/* Enhanced form elements */
+.dark input,
+.dark textarea,
+.dark select {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid hsl(217.2 32.6% 17.5%);
+  color: hsl(210 40% 98%);
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: hsl(142.1 70.6% 45.3%);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* Better scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: hsl(217.2 32.6% 17.5%);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(215 20.2% 65.1%);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(142.1 70.6% 45.3%);
+}
+
+/* Enhanced shadows for dark mode */
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved gradient overlays */
+.dark .gradient-overlay {
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
+}
+
+/* Better animation performance */
+.dark .animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: opacity;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .dark .mobile-menu {
+    background: rgba(15, 23, 42, 0.95);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+}
+
+/* Accessibility improvements */
+.dark .focus\:outline-none:focus {
+  outline: 2px solid hsl(142.1 70.6% 45.3%);
+  outline-offset: 2px;
+}
+
+/* Print styles for dark mode */
+@media print {
+  .dark * {
+    background: white !important;
+    color: black !important;
+  }
+}
